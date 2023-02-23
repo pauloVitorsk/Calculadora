@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Merriweather&display=swap');
+
+body{
+    margin: 0;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    background: rgb(102, 5, 102) ;
+
+    animation:color 10s infinite linear;
+    
+    /* background-image: url(../img/background.jfif) */
+}
+h1{
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    text-shadow: 0.1em 0.1em rgb(0, 0, 0);
+}
+input{
+    color: #fff;
+    padding: 17px;
+    outline: none;
+    font-size:38px;
+    font-family: 'Merriweather', cursive;;
+    border-radius: 25%;
+}
+.num{
+    width: 64px;
+    height:80px;
+    cursor: pointer;
+
+}
+.num:hover{
+    background: greenyellow;
+}
+.text2{
+    color:red;
+    width: 160px;
+    height: 26px;
+    border-radius: 22px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom:12px ;
+}
+.text1{
+    width: 24px;
+    height: 26px;
+    border-radius: 32px;
+    letter-spacing: 5px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.text1:hover{
+    background: rgb(255, 1, 1);
+}
+
+.green{
+    background-color: rgb(27, 235, 166);
+    margin-bottom: 12px;
+}
+
+.ora{
+    background-color: rgb(255, 136, 0);
+    margin-bottom: 12px;
+}
+
+.blue{
+    background-color: rgb(37, 37, 240);
+    margin-bottom: 12px;
+}
+.mainColor{
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 12px;  
+}
+.pink{
+    background-color: rgb(190, 52, 75);
+}
+.main{
+    display: inline-block;
+}
+@keyframes color{
+    0% {background: rgb(65, 2, 65);}
+    5% {background: purple;}
+    10% {background: rgb(180, 12, 180);}
+    20%{background: rgb(233, 50, 233);}
+    40%{background: rgb(127, 26, 209);}
+    60%{background: rgb(66, 7, 114);}
+    80%{background: rgb(10, 0, 102);}
+    100%{background:rgb(3, 0, 22);}
+}
