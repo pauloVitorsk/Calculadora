@@ -20,13 +20,14 @@ h1{
     color: white;
     font-size: 40px;
     text-shadow: 0.1em 0.1em rgb(0, 0, 0);
+    font-family: 'Merriweather',sans-serif;
 }
 input{
     color: #fff;
     padding: 17px;
     outline: none;
     font-size:38px;
-    font-family: 'Merriweather', cursive;;
+    font-family: 'Merriweather',sans-serif;
     border-radius: 25%;
 }
 .num{
