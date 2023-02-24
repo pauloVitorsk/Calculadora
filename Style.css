@@ -11,14 +11,57 @@ body{
 
     background: rgb(102, 5, 102) ;
 
-    animation:color 10s infinite linear;
-    
-    /* background-image: url(../img/background.jfif) */
+    animation:color 20s infinite ;
+
 }
+.header{
+   width: 100px;
+   height: 100px;
+   position: relative;
+   left: 150px;
+   bottom: 10px;
+}
+.olho1,.olho2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.olho1{
+    animation: piscar 4s infinite  linear ;
+}
+.olho2{
+    animation: piscar2 4s infinite linear;
+    width:115px;
+    left: -5px;
+    top:20px;
+}
+
+
+@keyframes piscar {
+0% {opacity: 1;}
+40% {opacity: 0;}
+50%{opacity: 0;}
+70%{opacity: 0;}
+80%{opacity: 0;}
+90%{opacity: 0.1;}
+}
+@keyframes piscar2 {
+    0% {opacity: 0;  }
+    50%{opacity: 1;}
+    70%{opacity: 0.1;}
+    80%{opacity: 0;}
+    90%{opacity: 0;}
+    100%{opacity: 0;}
+    }
+
 h1{
-    width: 100%;
+    width: 20px;
+    height: 40px;
+    top: 80px;
+    position:absolute;
+    
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     text-shadow: 0.1em 0.1em rgb(0, 0, 0);
     font-family: 'Merriweather',sans-serif;
 }
@@ -34,13 +77,16 @@ input{
     width: 64px;
     height:80px;
     cursor: pointer;
+    box-shadow: -0.1em 1px 0.2em rgba(255, 255, 255, 0.795);
 
 }
 .num:hover{
     background: greenyellow;
 }
 .text2{
-    color:red;
+    color:rgb(243, 241, 241);
+    box-shadow: -0.1em 1px 0.4em rgba(24, 250, 16, 0.945);
+    text-shadow:-0.1em 1px 0.2em rgba(6, 250, 6, 0.911);
     width: 160px;
     height: 26px;
     border-radius: 22px;
@@ -49,41 +95,59 @@ input{
     margin-bottom:12px ;
 }
 .text1{
-    width: 24px;
+    width: 25px;
     height: 26px;
     border-radius: 32px;
     letter-spacing: 5px;
     margin-bottom: 12px;
     cursor: pointer;
+    
 }
 .text1:hover{
     background: rgb(255, 1, 1);
+    padding: 0.5em;
+}
+.mainColor{
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 12px;  
+    /* box-shadow: -0.1em 1px 0.4em rgba(243, 243, 9, 0.534); */
 }
 
 .green{
     background-color: rgb(27, 235, 166);
     margin-bottom: 12px;
+    box-shadow: -0.1em 1px 0.3em rgba(27, 235, 166, 0.616);
+    box-shadow: inset -0.2rem 4px 0.1em black;
+    color: black;
 }
 
 .ora{
     background-color: rgb(255, 136, 0);
     margin-bottom: 12px;
+    box-shadow: -0.1em 1px 0.3em rgba(255, 136, 0, 0.562);
+    box-shadow: inset -0.2rem 4px 0.1em black;
+    
+    color: black;
 }
 
 .blue{
     background-color: rgb(37, 37, 240);
     margin-bottom: 12px;
+    box-shadow: -0.1em 1px 0.3em  rgba(37, 37, 240, 0.616);
+    box-shadow: inset -0.2rem 4px 0.1em black;
+    color: black;
 }
-.mainColor{
-    background-color: rgb(0, 0, 0);
-    margin-bottom: 12px;  
-}
+
 .pink{
     background-color: rgb(190, 52, 75);
+    box-shadow: -0.1em 1px 0.3em rgba(190, 52, 75, 0.911);
+    box-shadow: inset -0.2rem 4px 0.1em black;
+    color: black;
 }
 .main{
     display: inline-block;
 }
+
 @keyframes color{
     0% {background: rgb(65, 2, 65);}
     5% {background: purple;}
@@ -94,3 +158,4 @@ input{
     80%{background: rgb(10, 0, 102);}
     100%{background:rgb(3, 0, 22);}
 }
+
